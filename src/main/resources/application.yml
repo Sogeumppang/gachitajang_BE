@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active:
+      - local
+    group:
+      local:
+        - local
+      prod:
+        - prod
+      ci:
+        - ci
+    include:
+      - jwt
